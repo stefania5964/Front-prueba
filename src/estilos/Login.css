@@ -1,0 +1,92 @@
+/* Fondo azul oscuro */
+body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #001f3f; /* Azul oscuro */
+    color: #fff;
+  }
+  
+  /* Estrellas en movimiento */
+  @keyframes twinkling {
+    0% { opacity: 0.5; }
+    50% { opacity: 1; }
+    100% { opacity: 0.5; }
+  }
+  
+  .stars {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('https://www.transparenttextures.com/patterns/stardust.png') repeat;
+    animation: twinkling 1.5s infinite alternate;
+    z-index: -1;
+  }
+  
+  .Login {
+    text-align: center;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+  }
+  
+  .Login-header {
+    background-color: #000000; /* Fondo negro */
+    color: #ffffff; /* Texto blanco */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    padding: 20px;
+    max-width: 400px;
+    width: 100%;
+    z-index: 1; /* Asegúrate de que el contenido esté encima del fondo con estrellas */
+  }
+  
+  .Login-header h1 {
+    color: #ffffff; /* Texto blanco */
+    font-size: 48px; /* Tamaño grande */
+    font-weight: bold;
+    margin-bottom: 20px;
+    border: 2px solid #ffcc00; /* Borde amarillo */
+    padding: 10px;
+    border-radius: 4px;
+    display: inline-block;
+    text-transform: uppercase; /* Opcional: para poner el texto en mayúsculas */
+  }
+  
+  .form-group {
+    margin-bottom: 15px;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  
+  input {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #ffcc00; /* Amarillo */
+    border: none;
+    color: white;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+  }
+  
+  button:hover {
+    background-color: #e6b800; /* Amarillo más oscuro en hover */
+  }
+  
